@@ -56,6 +56,10 @@ section {
   min-height: 100vh;
   padding: 1rem;
 }
+section1 {
+  min-height: 50vh;
+  padding: 1rem;
+}
 
 .btn {
   padding: 0.7rem 3rem;
@@ -424,6 +428,11 @@ header .navbar ul li a:hover {
 @media (max-width: 768px) {
   html {
     font-size: 50%;
+  }
+}
+@media (max-width: 978px) {
+  header .navbar ul li a:hover {
+    background: var(--yellow);
   }
 }
 

@@ -310,7 +310,7 @@ header .navbar ul li a:hover {
 
 .portfolio .box-container .box {
   height: 20rem;
-  width: 26rem;
+  width: 36rem;
   border-radius: 1rem;
   margin: 2rem;
   overflow: hidden;
@@ -324,6 +324,33 @@ header .navbar ul li a:hover {
 }
 
 .portfolio .box-container .box:hover img {
+  transform: scale(1.2);
+}
+
+.blog .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+.blog .box-container .box {
+  height: 20rem;
+  width: 36rem;
+  border-radius: 1rem;
+  margin: 2rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.blog .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.blog .box-container .box:hover img {
   transform: scale(1.2);
 }
 
@@ -454,6 +481,10 @@ header .navbar ul li a:hover {
   }
 
   .portfolio .box-container .box {
+    width: 100%;
+  }
+
+  .blog .box-container .box {
     width: 100%;
   }
 

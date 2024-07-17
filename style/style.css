@@ -445,10 +445,137 @@ header .navbar ul li a:hover {
 
 .top {
   position: fixed;
-  bottom: 7.5rem;
+  bottom: 10rem;
   right: 2rem;
   z-index: 100;
   display: none;
+}
+/* chat bot */
+#chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 350px;
+  max-width: 90%;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  animation: slideUp 0.3s ease-out;
+  overflow: hidden;
+  z-index: 2; /* Ensure chatbot is above chat button */
+}
+#chat-header {
+  position: relative;
+  background: #d7921c;
+  color: #fff;
+  padding: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 2; /* Ensure chat header is above chat button */
+}
+
+#close-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+#chat-body {
+  height: 300px;
+  overflow-y: auto;
+  padding: 20px;
+  background: #f9f9f9;
+  z-index: 2; /* Ensure chat messages are above chat button */
+}
+
+#chat-messages {
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  max-width: 75%;
+  word-wrap: break-word;
+}
+
+/* .user {
+  align-self: flex-end;
+  background: #6138bd;
+  color: #fff;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+} */
+
+.bot {
+  align-self: flex-start;
+  background: #e2e2e2;
+  color: #333;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+#chat-input {
+  display: flex;
+  border-top: 1px solid #ccc;
+  background: #fff;
+  padding: 10px;
+  z-index: 2; /* Ensure chat input is above chat button */
+}
+
+#chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-bottom-left-radius: 15px;
+  outline: none;
+}
+
+#send-btn {
+  background: #6138bd;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 15px;
+  outline: none;
+  transition: background 0.3s ease;
+  position: relative;
+  z-index: 2; /* Ensure send button is above chat button */
+}
+
+#send-btn:hover {
+  background: black;
+  color: white;
+}
+
+#chat-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #fff;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+  outline: none;
+  z-index: 1; /* Ensure chat button is below chatbot */
 }
 
 /* media queries  */

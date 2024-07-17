@@ -108,7 +108,7 @@ header {
   text-align: center;
 }
 
-header .user img {
+header .user1 img {
   height: 17rem;
   width: 17rem;
   border-radius: 50%;
@@ -117,12 +117,12 @@ header .user img {
   border: 0.7rem solid var(--yellow);
 }
 
-header .user .name {
+header .user1 .name {
   font-size: 3.5rem;
   color: #fff;
 }
 
-header .user .post {
+header .user1 .post {
   font-size: 2rem;
   color: #eee;
 }
@@ -442,6 +442,97 @@ header .navbar ul li a:hover {
   padding-right: 1rem;
   color: var(--yellow);
 }
+/* Footer section */
+/* footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  height: auto;
+  padding-top: 40px;
+  width: 100vh;
+  color: white;
+} */
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background: #111;
+}
+.h3style {
+  font-size: 3rem;
+  font-weight: 500;
+  padding: 10px;
+  text-transform: capitalize;
+  line-height: 3rem;
+  color: white;
+  background: rgba(32, 29, 29, 0.222);
+}
+.pstyle {
+  max-width: 1100px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+  color: #f9f9f9;
+}
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li {
+  margin: 0 10px;
+}
+.socials li a img {
+  text-decoration: none;
+  border-radius: 50%;
+  width: 40%;
+}
+.footer-menu {
+  margin-bottom: 20px;
+}
+.footer-menu ul {
+  display: flex;
+}
+.footer-menu ul li {
+  padding-right: 10px;
+  display: block;
+}
+.footer-menu ul li a {
+  color: #cfd2d6;
+  border: 1.3px solid white;
+  padding: 6px 15px;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.footer-menu ul li a:hover {
+  color: #232222;
+  background: #f9ca24;
+}
+.footer-bottom {
+  background: #222;
+  width: 100vw;
+  padding: 20px;
+  text-align: center;
+}
+.footer-bottom p {
+  text-align: center;
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+  color: white;
+}
+.footer-bottom p a {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
 
 .top {
   position: fixed;
@@ -510,14 +601,14 @@ header .navbar ul li a:hover {
   word-wrap: break-word;
 }
 
-/* .user {
+.user {
   align-self: flex-end;
   background: #6138bd;
   color: #fff;
   border-bottom-right-radius: 5px;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-} */
+}
 
 .bot {
   align-self: flex-start;
@@ -646,5 +737,13 @@ header .navbar ul li a:hover {
 
   .contact .row form {
     margin: 3rem 0;
+  }
+}
+@media (max-width: 500px) {
+  .footer-menu ul {
+    display: inline;
+  }
+  .footer-menu ul li {
+    margin-bottom: 20px;
   }
 }

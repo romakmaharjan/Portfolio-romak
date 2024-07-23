@@ -69,6 +69,7 @@ section1 {
   margin-top: 1rem;
   font-size: 2rem;
   border-radius: 5rem;
+  display: flex;
 }
 
 .btn i {
@@ -133,7 +134,7 @@ header .navbar {
 
 header .navbar ul {
   list-style: none;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
 }
 
 header .navbar ul li a {

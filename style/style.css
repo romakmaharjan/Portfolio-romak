@@ -199,6 +199,18 @@ header .navbar ul li a:hover {
   padding: 1rem 0;
 }
 
+/* navbar icons visibility icons style */
+/* .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+} */
+
 .about .row {
   display: flex;
   align-items: center;

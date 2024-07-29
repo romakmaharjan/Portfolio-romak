@@ -56,10 +56,10 @@ section {
   min-height: 100vh;
   padding: 1rem;
 }
-section1 {
+/* section1 {
   min-height: 50vh;
   padding: 1rem;
-}
+} */
 
 .btn {
   padding: 0.7rem 3rem;
@@ -158,7 +158,27 @@ header .navbar ul li a:hover {
   width: 50px;
   margin: 0px 5px;
 }
+/* langauge icons */
+.icons-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
 
+.icon-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+}
+
+.icon-item img {
+  width: 100%;
+  height: auto;
+}
+/* langauge icons ends */
 #menu {
   position: fixed;
   top: 2rem;

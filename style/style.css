@@ -252,6 +252,7 @@ header .navbar ul li a:hover {
   border: 0;
 } */
 
+/* //about section style */
 .about .row {
   display: flex;
   align-items: center;
@@ -305,6 +306,91 @@ header .navbar ul li a:hover {
   font-size: 2rem;
   color: #fff;
 }
+/* Base Styles */
+.mycontribute-company {
+  display: flex; /* Use flexbox layout */
+  width: 100%; /* Full width */
+  position: relative;
+  height: 250px; /* Adjust as needed */
+  align-items: center; /* Center items vertically */
+  animation: scroll 6s linear infinite; /* Apply scrolling animation */
+}
+
+.logo-item {
+  flex: 0 0 auto; /* Prevent shrinking */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  padding: 0 20px; /* Spacing between items */
+}
+
+.logo-item img {
+  max-width: 100%; /* Ensure images scale within their containers */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.mycontribute-company::before,
+.mycontribute-company::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.mycontribute-company::after {
+  right: 0;
+  transform: rotateY(180deg);
+}
+
+.mycontribute-company::before {
+  left: 0;
+  transform: rotateY(180deg);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Responsive Styles */
+
+/* For tablets and larger devices */
+@media (max-width: 768px) {
+  .mycontribute-company {
+    height: 80px; /* Reduce height */
+  }
+
+  .logo-item {
+    padding: 0 15px; /* Reduce spacing */
+  }
+
+  .logo-item img {
+    max-height: 60px; /* Reduce image size */
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  .mycontribute-company {
+    height: 60px; /* Further reduce height */
+  }
+
+  .logo-item {
+    padding: 0 10px; /* Further reduce spacing */
+  }
+
+  .logo-item img {
+    max-height: 40px; /* Further reduce image size */
+  }
+}
+
+/* about section style ends */
 
 .qualification .box-container {
   display: flex;
@@ -375,6 +461,11 @@ header .navbar ul li a:hover {
 }
 
 .portfolio .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.portfolio .box-container .box video {
   height: 100%;
   width: 100%;
   object-fit: cover;

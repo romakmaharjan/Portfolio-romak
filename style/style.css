@@ -122,6 +122,17 @@ header .user1 .name {
   font-size: 3.5rem;
   color: #fff;
 }
+/* name swap effects start */
+.letter {
+  display: inline-block;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.hidden {
+  transform: translateX(-20px);
+  opacity: 0;
+}
+/* name swap effects ends*/
 
 header .user1 .post {
   font-size: 2rem;

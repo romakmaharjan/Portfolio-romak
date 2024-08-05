@@ -114,3 +114,30 @@ document.addEventListener("DOMContentLoaded", (event) => {
     setTimeout(() => addMessage(botResponse, "bot"), 1000);
   }
 });
+
+// name swap letter js effects
+// Original and new letters (use different letters if you want to swap with something else)
+const originalLetters = ["K", "a", "r", "m", "a"];
+const newLetters = ["R", "a", "m", "a", "k"]; // Example: Swapping to "Steve"
+
+// Reference to all letter elements
+const letterElements = document.querySelectorAll(".letter");
+
+// Function to swap each letter with a delay
+function swapLetters() {
+  letterElements.forEach((letter, index) => {
+    setTimeout(() => {
+      letter.classList.add("hidden"); // Hide the letter
+
+      setTimeout(() => {
+        letter.textContent = newLetters[index]; // Change the letter
+        letter.classList.remove("hidden"); // Show the new letter
+      }, 500); // Time to wait for the transition effect
+    }, index * 500); // Delay for each letter
+  });
+}
+
+// Start swapping letters after 2 seconds
+setTimeout(swapLetters, 2000);
+
+//ends name swap letters js effects

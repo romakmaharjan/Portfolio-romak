@@ -100,9 +100,11 @@ header {
   background: #1a1a1a;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-flow: column;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 3rem 2rem;
   text-align: center;
+  overflow-y: auto; /* Scroll if needed */
 }
 
 header .user1 img {
@@ -117,6 +119,7 @@ header .user1 img {
 header .user1 .name {
   font-size: 3.5rem;
   color: #fff;
+  font-weight: 600;
 }
 /* name swap effects start */
 .letter {
@@ -131,8 +134,9 @@ header .user1 .name {
 /* name swap effects ends*/
 
 header .user1 .post {
-  font-size: 2rem;
-  color: #eee;
+ font-size: 1.8rem;
+  color: #ddd;
+  margin-top: 0.3rem;
 }
 
 header .navbar {
@@ -142,16 +146,22 @@ header .navbar {
 header .navbar ul {
   list-style: none;
   padding: 1rem 2rem;
+  margin: 0;
+}
+
+header .navbar ul li {
+  margin: 1.2rem 0;
 }
 
 header .navbar ul li a {
   display: block;
   padding: 1rem;
-  margin: 1.5rem 0;
   background: #333;
   color: #fff;
   font-size: 2rem;
-  border-radius: 5rem;
+  border-radius: 3rem;
+  text-align: center;
+  transition: 0.3s ease-in-out;
 }
 
 header .navbar ul li a:hover {
@@ -755,15 +765,22 @@ box-shadow: 0 0 12px #ff4f4f;
 
 
 /* Icons */
-.navbar ul li a i {
-font-size: 22px;
-color: #ffb400;
-transition: 0.3s;
+header .navbar ul li a i {
+font-size: 2.2rem;
+  color: #ffb400;
+  transition: color 0.3s ease;
 }
 
 
-.navbar ul li a:hover i {
+header .navbar ul li a:hover i {
+background: #ff4f4f;
 color: #fff;
+transform: translateX(10px);
+box-shadow: 0 0 10px #ff4f4f;
+}
+
+header .navbar ul li a:hover i {
+  color: #fff;
 }
 
 

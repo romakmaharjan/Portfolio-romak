@@ -5,612 +5,381 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ramak Maharjan — Tech Operational Analyst</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Clash+Display:wght@400;500;600;700&family=Cabinet+Grotesk:wght@300;400;500;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
     <canvas id="ai-canvas"></canvas>
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
 
+    <!-- SIDEBAR -->
     <header id="sidebar">
+      <div class="sidebar-glow"></div>
       <div class="av-wrap">
-        <img src="images/pic1.jpg" alt="Ramak Maharjan" />
+        <div class="av-frame">
+          <img src="images/pic1.jpg" alt="Ramak Maharjan" />
+          <div class="av-glare"></div>
+        </div>
         <div class="av-ring"></div>
         <div class="av-ring2"></div>
+        <div class="av-status"><span></span>Available</div>
       </div>
-      <div class="uname">Ramak Maharjan</div>
+      <div class="uname">Ramak<span class="dot">.</span></div>
       <div class="utitle">Tech Operational Analyst</div>
       <div class="socrow">
-        <a href="https://workspace.google.com/intl/en-US/gmail/" title="Email"
-          ><i class="fas fa-envelope"></i
-        ></a>
-        <a href="https://github.com/romakmaharjan" title="GitHub"
-          ><i class="fab fa-github"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/in/romak-maharjan-39b79515b/"
-          title="LinkedIn"
-          ><i class="fab fa-linkedin-in"></i
-        ></a>
+        <a href="https://workspace.google.com/intl/en-US/gmail/" title="Email" class="soc-link">
+          <i class="fas fa-envelope"></i><span class="soc-tooltip">Email</span>
+        </a>
+        <a href="https://github.com/romakmaharjan" title="GitHub" class="soc-link">
+          <i class="fab fa-github"></i><span class="soc-tooltip">GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/romak-maharjan-39b79515b/" title="LinkedIn" class="soc-link">
+          <i class="fab fa-linkedin-in"></i><span class="soc-tooltip">LinkedIn</span>
+        </a>
       </div>
       <nav class="snav">
         <ul>
-          <li>
-            <a href="#home"><i class="fas fa-home"></i><span>Home</span></a>
-          </li>
-          <li>
-            <a href="#about"><i class="fas fa-user"></i><span>About</span></a>
-          </li>
-          <li>
-            <a href="#qualification"
-              ><i class="fas fa-graduation-cap"></i><span>Education</span></a
-            >
-          </li>
-          <li>
-            <a href="#skill"
-              ><i class="fas fa-briefcase"></i><span>Experience</span></a
-            >
-          </li>
-          <li>
-            <a href="#portfolio"
-              ><i class="fas fa-layer-group"></i><span>Works</span></a
-            >
-          </li>
-          <li>
-            <a href="#blog"><i class="fas fa-pen-nib"></i><span>Blog</span></a>
-          </li>
-          <li>
-            <a href="#contact"
-              ><i class="fas fa-paper-plane"></i><span>Contact</span></a
-            >
-          </li>
+          <li><a href="#home"><i class="fas fa-home"></i><span>Home</span></a></li>
+          <li><a href="#about"><i class="fas fa-user"></i><span>About</span></a></li>
+          <li><a href="#qualification"><i class="fas fa-graduation-cap"></i><span>Education</span></a></li>
+          <li><a href="#skill"><i class="fas fa-briefcase"></i><span>Experience</span></a></li>
+          <li><a href="#portfolio"><i class="fas fa-layer-group"></i><span>Works</span></a></li>
+          <li><a href="#blog"><i class="fas fa-pen-nib"></i><span>Blog</span></a></li>
+          <li><a href="#contact"><i class="fas fa-paper-plane"></i><span>Contact</span></a></li>
         </ul>
       </nav>
+      <div class="sidebar-footer">
+        <span>© 2026 Ramak Maharjan</span>
+      </div>
     </header>
 
     <div id="mbtn"><i class="fas fa-bars"></i></div>
+    <div id="sidebar-overlay"></div>
 
     <main>
+      <!-- HOME -->
       <section id="home">
-        <div class="hero-bg"></div>
-        <div class="ai-decorations">
-          <!-- AI Neural Network Icon -->
-          <svg
-            class="ai-icon ai-neural"
-            viewBox="0 0 100 100"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="50" cy="20" r="8" fill="rgba(139, 92, 246, 0.8)" />
-            <circle cx="30" cy="50" r="8" fill="rgba(59, 130, 246, 0.8)" />
-            <circle cx="70" cy="50" r="8" fill="rgba(59, 130, 246, 0.8)" />
-            <circle cx="20" cy="80" r="8" fill="rgba(16, 185, 129, 0.8)" />
-            <circle cx="50" cy="80" r="8" fill="rgba(16, 185, 129, 0.8)" />
-            <circle cx="80" cy="80" r="8" fill="rgba(16, 185, 129, 0.8)" />
-            <line
-              x1="50"
-              y1="28"
-              x2="30"
-              y2="42"
-              stroke="rgba(139, 92, 246, 0.4)"
-              stroke-width="1.5"
-            />
-            <line
-              x1="50"
-              y1="28"
-              x2="70"
-              y2="42"
-              stroke="rgba(139, 92, 246, 0.4)"
-              stroke-width="1.5"
-            />
-            <line
-              x1="30"
-              y1="58"
-              x2="20"
-              y2="72"
-              stroke="rgba(59, 130, 246, 0.4)"
-              stroke-width="1.5"
-            />
-            <line
-              x1="30"
-              y1="58"
-              x2="50"
-              y2="72"
-              stroke="rgba(59, 130, 246, 0.4)"
-              stroke-width="1.5"
-            />
-            <line
-              x1="70"
-              y1="58"
-              x2="50"
-              y2="72"
-              stroke="rgba(59, 130, 246, 0.4)"
-              stroke-width="1.5"
-            />
-            <line
-              x1="70"
-              y1="58"
-              x2="80"
-              y2="72"
-              stroke="rgba(59, 130, 246, 0.4)"
-              stroke-width="1.5"
-            />
-          </svg>
-
-          <!-- AI Chip Icon -->
-          <svg
-            class="ai-icon ai-chip"
-            viewBox="0 0 100 100"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              x="20"
-              y="20"
-              width="60"
-              height="60"
-              fill="none"
-              stroke="rgba(249, 115, 22, 0.7)"
-              stroke-width="2"
-              rx="4"
-            />
-            <rect
-              x="30"
-              y="30"
-              width="40"
-              height="40"
-              fill="rgba(249, 115, 22, 0.1)"
-              rx="2"
-            />
-            <line
-              x1="10"
-              y1="35"
-              x2="15"
-              y2="35"
-              stroke="rgba(249, 115, 22, 0.6)"
-              stroke-width="2"
-            />
-            <line
-              x1="10"
-              y1="50"
-              x2="15"
-              y2="50"
-              stroke="rgba(249, 115, 22, 0.6)"
-              stroke-width="2"
-            />
-            <line
-              x1="10"
-              y1="65"
-              x2="15"
-              y2="65"
-              stroke="rgba(249, 115, 22, 0.6)"
-              stroke-width="2"
-            />
-            <line
-              x1="85"
-              y1="35"
-              x2="90"
-              y2="35"
-              stroke="rgba(249, 115, 22, 0.6)"
-              stroke-width="2"
-            />
-            <line
-              x1="85"
-              y1="50"
-              x2="90"
-              y2="50"
-              stroke="rgba(249, 115, 22, 0.6)"
-              stroke-width="2"
-            />
-            <line
-              x1="85"
-              y1="65"
-              x2="90"
-              y2="65"
-              stroke="rgba(249, 115, 22, 0.6)"
-              stroke-width="2"
-            />
-            <circle cx="40" cy="40" r="3" fill="rgba(249, 115, 22, 0.8)" />
-            <circle cx="60" cy="40" r="3" fill="rgba(249, 115, 22, 0.8)" />
-            <circle cx="50" cy="60" r="3" fill="rgba(249, 115, 22, 0.8)" />
-          </svg>
-
-          <!-- AI Data Icon -->
-          <svg
-            class="ai-icon ai-data"
-            viewBox="0 0 100 100"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              x="15"
-              y="25"
-              width="15"
-              height="50"
-              fill="rgba(59, 130, 246, 0.7)"
-            />
-            <rect
-              x="35"
-              y="15"
-              width="15"
-              height="60"
-              fill="rgba(139, 92, 246, 0.7)"
-            />
-            <rect
-              x="55"
-              y="35"
-              width="15"
-              height="40"
-              fill="rgba(16, 185, 129, 0.7)"
-            />
-            <rect
-              x="75"
-              y="20"
-              width="15"
-              height="55"
-              fill="rgba(249, 115, 22, 0.7)"
-            />
-            <line
-              x1="10"
-              y1="80"
-              x2="95"
-              y2="80"
-              stroke="rgba(255, 255, 255, 0.4)"
-              stroke-width="1.5"
-            />
-          </svg>
+        <div class="hero-bg">
+          <div class="hero-orb orb1"></div>
+          <div class="hero-orb orb2"></div>
+          <div class="hero-orb orb3"></div>
+          <div class="hero-grid"></div>
         </div>
-        <div class="hmts">
-          <svg
-            viewBox="0 0 1400 900"
-            preserveAspectRatio="xMidYMax slice"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <polygon
-              points="0,900 0,480 100,340 220,440 360,240 500,400 620,190 760,370 880,260 1020,410 1140,210 1280,370 1400,300 1400,900"
-              fill="rgba(0,0,0,0.22)"
-            />
-            <polygon
-              points="0,900 0,640 90,550 200,620 300,470 430,580 560,430 690,560 820,450 950,590 1080,470 1200,590 1320,500 1400,530 1400,900"
-              fill="rgba(0,0,0,0.38)"
-            />
-            <polygon
-              points="0,900 0,760 110,700 230,760 350,670 480,740 600,680 730,750 860,690 990,760 1110,700 1240,760 1400,720 1400,900"
-              fill="rgba(0,0,0,0.6)"
-            />
-          </svg>
-        </div>
+        <div class="hero-noise"></div>
+
         <div class="hcontent">
-          <p class="hgreet">🙏 Namaste, Welcome</p>
-          <h1 class="hhead">
-            I'M
-            <span>
-              <span class="letter">K</span><span class="letter">a</span
-              ><span class="letter">r</span><span class="letter">m</span
-              ><span class="letter">a</span>
-            </span>
-            <span class="nl">maharjan</span>
-          </h1>
-          <p class="hsub">
-            Dedicated IT professional with broad skills in web technologies,
-            operations, and system management. Building digital experiences from
-            Nepal to the world.
-          </p>
-          <div class="hcta">
-            <a href="#about" class="bp"
-              >Explore my work <i class="fas fa-arrow-right"></i
-            ></a>
-            <a href="images/ramak maharjan resume.pdf" class="bo"
-              >Download CV <i class="fas fa-download"></i
-            ></a>
+          <div class="hbadge">
+            <span class="badge-dot"></span>
+            <span>🙏 Namaste, Welcome from Nepal</span>
           </div>
+          <h1 class="hhead">
+            <span class="hhead-line1">I'M</span>
+            <span class="hhead-name">
+              <span class="name-3d">
+                <span class="letter">R</span><span class="letter">a</span><span class="letter">m</span><span class="letter">a</span><span class="letter">k</span>
+              </span>
+            </span>
+            <span class="hhead-line3">Maharjan</span>
+          </h1>
+          <div class="hero-tags">
+            <span class="htag"><i class="fas fa-code"></i> Web Dev</span>
+            <span class="htag"><i class="fas fa-server"></i> IT Ops</span>
+            <span class="htag"><i class="fas fa-chart-line"></i> Analytics</span>
+          </div>
+          <p class="hsub">Dedicated IT professional bridging web technologies, operations, and system management. Building digital experiences from Nepal to the world.</p>
+          <div class="hcta">
+            <a href="#about" class="btn-primary">
+              <span>Explore my work</span>
+              <i class="fas fa-arrow-right"></i>
+              <div class="btn-glow"></div>
+            </a>
+            <a href="https://drive.google.com/file/d/1EK_pMAMFiDiIxTTsHRzsglvkcN24v0xP/view?usp=sharing" class="btn-secondary">
+              <span>Download CV</span>
+              <i class="fas fa-download"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-cards">
+          <div class="hcard hcard1">
+            <div class="hcard-icon"><i class="fas fa-code"></i></div>
+            <div class="hcard-num">4+</div>
+            <div class="hcard-lbl">Years Experience</div>
+          </div>
+          <div class="hcard hcard2">
+            <div class="hcard-icon"><i class="fas fa-project-diagram"></i></div>
+            <div class="hcard-num">10+</div>
+            <div class="hcard-lbl">Projects Done</div>
+          </div>
+          <div class="hcard hcard3">
+            <div class="hcard-icon"><i class="fas fa-hospital"></i></div>
+            <div class="hcard-num">5+</div>
+            <div class="hcard-lbl">Hospitals Served</div>
+          </div>
+        </div>
+
+        <div class="scroll-indicator">
+          <span>Scroll</span>
+          <div class="scroll-line"></div>
         </div>
       </section>
 
+      <!-- ABOUT -->
       <section id="about">
-        <p class="slabel">Who I am</p>
-        <h2 class="stitle">About <span>Me</span></h2>
+        <div class="section-label"><span>01</span>Who I am</div>
+        <h2 class="stitle">About <em>Me</em></h2>
         <div class="sdiv"></div>
         <div class="agrid">
-          <div>
-            <div class="arow">
-              <span class="albl">Full Name</span
-              ><span class="aval">Ramak Maharjan</span>
-            </div>
-            <div class="arow">
-              <span class="albl">Age</span><span class="aval">28 years</span>
-            </div>
-            <div class="arow">
-              <span class="albl">Degree</span
-              ><span class="aval">BIM — St. Xavier's</span>
-            </div>
-            <div class="arow">
-              <span class="albl">Current Role</span
-              ><span class="aval">Tech Operational Analyst</span>
-            </div>
-            <div class="arow">
-              <span class="albl">Location</span
-              ><span class="aval">Chobhar, Kathmandu, Nepal</span>
-            </div>
-            <div class="arow">
-              <span class="albl">Speciality</span
-              ><span class="aval">IT Support · Web Dev · Ops</span>
-            </div>
-            <a
-              href="images/ramak maharjan resume.pdf"
-              class="bp"
-              style="margin-top: 3rem; width: fit-content"
-              >Download CV <i class="fas fa-download"></i
-            ></a>
+          <div class="about-info">
+            <div class="arow"><span class="albl">Full Name</span><span class="aval">Ramak Maharjan</span></div>
+            <div class="arow"><span class="albl">Age</span><span class="aval">28 years</span></div>
+            <div class="arow"><span class="albl">Degree</span><span class="aval">BIM — St. Xavier's</span></div>
+            <div class="arow"><span class="albl">Current Role</span><span class="aval">Tech Operational Analyst</span></div>
+            <div class="arow"><span class="albl">Location</span><span class="aval">Chobhar, Kathmandu, Nepal</span></div>
+            <div class="arow"><span class="albl">Speciality</span><span class="aval">IT Support · Web Dev · Ops</span></div>
+            <a href="images/RamakMaharjan Resume.pdf" class="btn-primary" style="margin-top:3rem;width:fit-content">
+              <span>Download CV</span><i class="fas fa-download"></i><div class="btn-glow"></div>
+            </a>
           </div>
           <div class="sgrid">
-            <div class="sbox">
-              <div class="snum">3+</div>
-              <div class="slg">Months training in web development</div>
-            </div>
-            <div class="sbox">
-              <div class="snum">1+</div>
-              <div class="slg">Years as Operational Assistant</div>
-            </div>
-            <div class="sbox">
-              <div class="snum">1+</div>
-              <div class="slg">Years in web technologies</div>
-            </div>
-            <div class="sbox">
-              <div class="snum">2+</div>
-              <div class="slg">Years as IT Officer in NGO</div>
-            </div>
+            <div class="sbox"><div class="sbox-inner"><div class="snum">3+</div><div class="slg">Months training in web development</div></div></div>
+            <div class="sbox"><div class="sbox-inner"><div class="snum">1+</div><div class="slg">Years as Operational Assistant</div></div></div>
+            <div class="sbox"><div class="sbox-inner"><div class="snum">1+</div><div class="slg">Years in web technologies</div></div></div>
+            <div class="sbox"><div class="sbox-inner"><div class="snum">2+</div><div class="slg">Years as IT Officer in NGO</div></div></div>
           </div>
         </div>
       </section>
 
+      <!-- CONTRIBUTIONS -->
       <section id="contribute">
-        <p class="slabel">Organisations</p>
-        <h2 class="stitle">My <span>Contributions</span></h2>
+        <div class="section-label"><span>02</span>Organisations</div>
+        <h2 class="stitle">My <em>Contributions</em></h2>
         <div class="sdiv"></div>
         <div class="ltrack">
-          <div class="lcard">
-            <img src="myContribute/mavorion.png" alt="Mavorion" />
-          </div>
-          <div class="lcard">
-            <img src="myContribute/tuthHospital.png" alt="TUTH Hospital" />
-          </div>
-          <div class="lcard">
-            <img
-              src="myContribute/Bhaktapur Hospital.jpg"
-              alt="Bhaktapur Hospital"
-            />
-          </div>
-          <div class="lcard">
-            <img src="myContribute/norvic-logo-new.jpeg" alt="Norvic" />
-          </div>
-          <div class="lcard">
-            <img src="myContribute/nfcclogo.png" alt="NFCC" />
-          </div>
-          <div class="lcard">
-            <img src="myContribute/wilderness.png" alt="Wilderness" />
-          </div>
-          <div class="lcard">
-            <img src="myContribute/gamenic.jpeg" alt="Gamenic" />
-          </div>
-          <div class="lcard">
-            <img src="myContribute/okynepal.png" alt="OKY Nepal" />
-          </div>
+          <div class="lcard" data-index="0"><span class="org-num">01</span><span class="org-name">Mavorion</span><div class="card-glow"></div></div>
+          <div class="lcard" data-index="1"><span class="org-num">02</span><span class="org-name">TUTH Hospital</span><div class="card-glow"></div></div>
+          <div class="lcard" data-index="2"><span class="org-num">03</span><span class="org-name">Bhaktapur Hospital</span><div class="card-glow"></div></div>
+          <div class="lcard" data-index="3"><span class="org-num">04</span><span class="org-name">Norvic</span><div class="card-glow"></div></div>
+          <div class="lcard" data-index="4"><span class="org-num">05</span><span class="org-name">NFCC Nepal</span><div class="card-glow"></div></div>
+          <div class="lcard" data-index="5"><span class="org-num">06</span><span class="org-name">Wilderness</span><div class="card-glow"></div></div>
+          <div class="lcard" data-index="6"><span class="org-num">07</span><span class="org-name">Gamenic</span><div class="card-glow"></div></div>
+          <div class="lcard" data-index="7"><span class="org-num">08</span><span class="org-name">OKY Nepal</span><div class="card-glow"></div></div>
         </div>
       </section>
 
+      <!-- EDUCATION -->
       <section id="qualification">
-        <p class="slabel">Academic Journey</p>
-        <h2 class="stitle">My <span>Education</span></h2>
+        <div class="section-label"><span>03</span>Academic Journey</div>
+        <h2 class="stitle">My <em>Education</em></h2>
         <div class="sdiv"></div>
         <div class="tline">
           <div class="titem">
             <div class="tdot"><i class="fas fa-graduation-cap"></i></div>
-            <div>
+            <div class="tcard">
               <div class="tyr">2013</div>
               <div class="th2">School Level Completed</div>
-              <div class="tp">
-                Completed from Adinath Secondary School, Chobhar, Kathmandu.
-              </div>
+              <div class="tp">Completed from Adinath Secondary School, Chobhar, Kathmandu.</div>
             </div>
           </div>
           <div class="titem">
             <div class="tdot"><i class="fas fa-graduation-cap"></i></div>
-            <div>
+            <div class="tcard">
               <div class="tyr">2015</div>
               <div class="th2">HSEB +2 Completed</div>
-              <div class="tp">
-                Completed +2 from Gauri Shankar Higher Secondary School,
-                Kalimati, Kathmandu.
-              </div>
+              <div class="tp">Completed +2 from Gauri Shankar Higher Secondary School, Kalimati, Kathmandu.</div>
             </div>
           </div>
           <div class="titem">
             <div class="tdot"><i class="fas fa-graduation-cap"></i></div>
-            <div>
+            <div class="tcard">
               <div class="tyr">2019</div>
               <div class="th2">Bachelor's Degree — BIM</div>
-              <div class="tp">
-                Completed BIM from St. Xavier's College with a 2.81 GPA.
-              </div>
+              <div class="tp">Completed BIM from St. Xavier's College with a 2.81 GPA.</div>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- EXPERIENCE -->
       <section id="skill">
-        <p class="slabel">Career Path</p>
-        <h2 class="stitle">Skills &amp; <span>Experience</span></h2>
+        <div class="section-label"><span>04</span>Career Path</div>
+        <h2 class="stitle">Skills &amp; <em>Experience</em></h2>
         <div class="sdiv"></div>
         <div class="expgrid">
           <div class="expcard">
+            <div class="expcard-bg"></div>
             <div class="eperiod">2020 — 2022</div>
             <div class="eicon"><i class="fas fa-code"></i></div>
             <div class="etitle">Frontend Developer &amp; IT Support</div>
-            <div class="edesc">
-              HTML, CSS, JavaScript, React, SQL, Laravel. Designed web layouts
-              at an NGO while ensuring data security and creating reports.
-            </div>
+            <div class="edesc">HTML, CSS, JavaScript, React, SQL, Laravel. Designed web layouts at an NGO while ensuring data security and creating reports.</div>
+            <div class="ecard-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
           </div>
           <div class="expcard">
+            <div class="expcard-bg"></div>
             <div class="eperiod">2023 — 2024</div>
             <div class="eicon"><i class="fas fa-mobile-alt"></i></div>
             <div class="etitle">Product Support — Oky Nepal (UNICEF)</div>
-            <div class="edesc">
-              Coordinated app development, managed cloud accounts, publishing,
-              and CMS for a UNICEF menstrual tracking app.
-            </div>
+            <div class="edesc">Coordinated app development, managed cloud accounts, publishing, and CMS for a UNICEF menstrual tracking app.</div>
+            <div class="ecard-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
           </div>
           <div class="expcard">
+            <div class="expcard-bg"></div>
             <div class="eperiod">2024 — 2025</div>
             <div class="eicon"><i class="fas fa-hospital"></i></div>
             <div class="etitle">Operational Assistant</div>
-            <div class="edesc">
-              Worked on HMIS software and assisted go-live deployments across
-              major hospitals inside and outside Nepal.
-            </div>
+            <div class="edesc">Worked on HMIS software and assisted go-live deployments across major hospitals inside and outside Nepal.</div>
+            <div class="ecard-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
           </div>
-          <div class="expcard">
+          <div class="expcard expcard--current">
+            <div class="expcard-bg"></div>
             <div class="eperiod">2026 — Current</div>
             <div class="eicon"><i class="fas fa-chart-line"></i></div>
             <div class="etitle">Tech Operational Analyst</div>
-            <div class="edesc">
-              Monitoring technical operations, managing system performance,
-              resolving issues, and ensuring smooth IT processes. 💻⚙️
-            </div>
+            <div class="edesc">Monitoring technical operations, managing system performance, resolving issues, and ensuring smooth IT processes. 💻⚙️</div>
+            <div class="ecard-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
           </div>
         </div>
       </section>
 
+      <!-- PORTFOLIO -->
       <section id="portfolio">
-        <p class="slabel">Selected Projects</p>
-        <h2 class="stitle">My <span>Works</span></h2>
+        <div class="section-label"><span>05</span>Selected Projects</div>
+        <h2 class="stitle">My <em>Works</em></h2>
         <div class="sdiv"></div>
         <div class="wgrid">
           <div class="wcard">
-            <a href="https://chiyasagar.netlify.app" target="_blank"
-              ><img src="images/chiyasagar.png" alt="Chiya Sagar" />
+            <a href="https://chiyasagar.netlify.app" target="_blank">
+              <div class="wcard-img"><img src="images/chiyasagar.png" alt="Chiya Sagar" /></div>
               <div class="wov">
-                <div class="wt">Chiya Sagar</div>
-                <div class="wa">
-                  View Project <i class="fas fa-arrow-right"></i>
-                </div></div
-            ></a>
+                <div class="wov-top"><span class="wtag">Web App</span></div>
+                <div class="wov-bot">
+                  <div class="wt">Chiya Sagar</div>
+                  <div class="wa">View Project <i class="fas fa-arrow-right"></i></div>
+                </div>
+              </div>
+            </a>
           </div>
           <div class="wcard">
-            <a href="https://nepalludoleague.com/" target="_blank"
-              ><img src="images/nepalludo.png" alt="Nepal Ludo League" />
+            <a href="https://nepalludoleague.com/" target="_blank">
+              <div class="wcard-img"><img src="images/nepalludo.png" alt="Nepal Ludo League" /></div>
               <div class="wov">
-                <div class="wt">Nepal Ludo League</div>
-                <div class="wa">
-                  View Project <i class="fas fa-arrow-right"></i>
-                </div></div
-            ></a>
+                <div class="wov-top"><span class="wtag">Gaming</span></div>
+                <div class="wov-bot">
+                  <div class="wt">Nepal Ludo League</div>
+                  <div class="wa">View Project <i class="fas fa-arrow-right"></i></div>
+                </div>
+              </div>
+            </a>
           </div>
           <div class="wcard">
-            <a href="https://visitmeet.com/" target="_blank"
-              ><img src="images/visitmeet.png" alt="VisitMeet" />
+            <a href="https://visitmeet.com/" target="_blank">
+              <div class="wcard-img"><img src="images/visitmeet.png" alt="VisitMeet" /></div>
               <div class="wov">
-                <div class="wt">VisitMeet</div>
-                <div class="wa">
-                  View Project <i class="fas fa-arrow-right"></i>
-                </div></div
-            ></a>
+                <div class="wov-top"><span class="wtag">Platform</span></div>
+                <div class="wov-bot">
+                  <div class="wt">VisitMeet</div>
+                  <div class="wa">View Project <i class="fas fa-arrow-right"></i></div>
+                </div>
+              </div>
+            </a>
           </div>
           <div class="wcard">
-            <a href="https://himalayanfriendly.com/" target="_blank"
-              ><img src="images/port1.jpg" alt="Himalayan Friendly" />
+            <a href="https://himalayanfriendly.com/" target="_blank">
+              <div class="wcard-img"><img src="images/port1.jpg" alt="Himalayan Friendly" /></div>
               <div class="wov">
-                <div class="wt">Himalayan Friendly</div>
-                <div class="wa">
-                  View Project <i class="fas fa-arrow-right"></i>
-                </div></div
-            ></a>
+                <div class="wov-top"><span class="wtag">Tourism</span></div>
+                <div class="wov-bot">
+                  <div class="wt">Himalayan Friendly</div>
+                  <div class="wa">View Project <i class="fas fa-arrow-right"></i></div>
+                </div>
+              </div>
+            </a>
           </div>
           <div class="wcard">
-            <a href="http://www.nfcc.org.np/" target="_blank"
-              ><img src="images/port4.jpg" alt="NFCC Nepal" />
+            <a href="http://www.nfcc.org.np/" target="_blank">
+              <div class="wcard-img"><img src="images/port4.jpg" alt="NFCC Nepal" /></div>
               <div class="wov">
-                <div class="wt">NFCC Nepal</div>
-                <div class="wa">
-                  View Project <i class="fas fa-arrow-right"></i>
-                </div></div
-            ></a>
+                <div class="wov-top"><span class="wtag">NGO</span></div>
+                <div class="wov-bot">
+                  <div class="wt">NFCC Nepal</div>
+                  <div class="wa">View Project <i class="fas fa-arrow-right"></i></div>
+                </div>
+              </div>
+            </a>
           </div>
           <div class="wcard">
-            <a href="https://wilderness-outdoors.com/" target="_blank"
-              ><img
-                src="images/wilderness-outdoors.jpg"
-                alt="Wilderness Outdoors" />
+            <a href="https://wilderness-outdoors.com/" target="_blank">
+              <div class="wcard-img"><img src="images/wilderness-outdoors.jpg" alt="Wilderness Outdoors" /></div>
               <div class="wov">
-                <div class="wt">Wilderness Outdoors</div>
-                <div class="wa">
-                  View Project <i class="fas fa-arrow-right"></i>
-                </div></div
-            ></a>
+                <div class="wov-top"><span class="wtag">Outdoors</span></div>
+                <div class="wov-bot">
+                  <div class="wt">Wilderness Outdoors</div>
+                  <div class="wa">View Project <i class="fas fa-arrow-right"></i></div>
+                </div>
+              </div>
+            </a>
           </div>
-          <div class="wcard">
-            <video autoplay loop muted playsinline>
-              <source src="video/designPlay.mp4" type="video/mp4" />
-            </video>
+          <div class="wcard wcard--video">
+            <div class="wcard-img">
+              <video autoplay loop muted playsinline><source src="video/designPlay.mp4" type="video/mp4" /></video>
+            </div>
             <div class="wov">
-              <div class="wt">Design Showcase</div>
-              <div class="wa">Watch Demo <i class="fas fa-play"></i></div>
+              <div class="wov-top"><span class="wtag">Design</span></div>
+              <div class="wov-bot">
+                <div class="wt">Design Showcase</div>
+                <div class="wa">Watch Demo <i class="fas fa-play"></i></div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- BLOG -->
       <section id="blog">
-        <p class="slabel">Writing</p>
-        <h2 class="stitle">My <span>Blogs</span></h2>
+        <div class="section-label"><span>06</span>Writing</div>
+        <h2 class="stitle">My <em>Blogs</em></h2>
         <div class="sdiv"></div>
         <div class="bgrid">
-          <a
-            href="https://medium.com/@ramakmaharjan/stripe-atlas-overview-process-benefits-opportunities-3e103245839f"
-            class="bcard"
-            ><img src="images/stripe medium blog.png" alt="Stripe Atlas" />
+          <a href="https://medium.com/@ramakmaharjan/stripe-atlas-overview-process-benefits-opportunities-3e103245839f" class="bcard">
+            <div class="bcard-img"><img src="images/stripe medium blog.png" alt="Stripe Atlas" /></div>
             <div class="bbody">
-              <div class="bread">
-                Read on Medium <i class="fas fa-arrow-right"></i>
-              </div></div
-          ></a>
-          <a
-            href="https://medium.com/@ramakmaharjan/creating-a-test-driven-api-in-laravel-0daac9a9ff31"
-            class="bcard"
-            ><img src="images/blog1.jpg" alt="TDD Laravel" />
+              <div class="btag">Fintech</div>
+              <div class="btitle">Stripe Atlas Overview</div>
+              <div class="bread">Read on Medium <i class="fas fa-arrow-right"></i></div>
+            </div>
+          </a>
+          <a href="https://medium.com/@ramakmaharjan/creating-a-test-driven-api-in-laravel-0daac9a9ff31" class="bcard">
+            <div class="bcard-img"><img src="images/blog1.jpg" alt="TDD Laravel" /></div>
             <div class="bbody">
-              <div class="bread">
-                Read on Medium <i class="fas fa-arrow-right"></i>
-              </div></div
-          ></a>
-          <a
-            href="https://medium.com/@ramakmaharjan/oky-nepal-app-a-menstruation-period-tracker-that-targets-under-school-girls-c0ec3175a96d"
-            class="bcard"
-            ><img src="images/oky blog2.jpg" alt="Oky Nepal" />
+              <div class="btag">Dev</div>
+              <div class="btitle">Test-Driven API in Laravel</div>
+              <div class="bread">Read on Medium <i class="fas fa-arrow-right"></i></div>
+            </div>
+          </a>
+          <a href="https://medium.com/@ramakmaharjan/oky-nepal-app-a-menstruation-period-tracker-that-targets-under-school-girls-c0ec3175a96d" class="bcard">
+            <div class="bcard-img"><img src="images/oky blog2.jpg" alt="Oky Nepal" /></div>
             <div class="bbody">
-              <div class="bread">
-                Read on Medium <i class="fas fa-arrow-right"></i>
-              </div></div
-          ></a>
+              <div class="btag">UNICEF</div>
+              <div class="btitle">Oky Nepal App</div>
+              <div class="bread">Read on Medium <i class="fas fa-arrow-right"></i></div>
+            </div>
+          </a>
         </div>
       </section>
 
+      <!-- CONTACT -->
       <section id="contact">
-        <p class="slabel">Get In Touch</p>
-        <h2 class="stitle">Contact <span>Me</span></h2>
+        <div class="section-label"><span>07</span>Get In Touch</div>
+        <h2 class="stitle">Contact <em>Me</em></h2>
         <div class="sdiv"></div>
         <div class="cgrid">
-          <div>
-            <p class="cititle">Contact Info</p>
+          <div class="contact-left">
+            <div class="contact-headline">Let's build something <em>amazing</em> together.</div>
             <div class="cdetail">
               <div class="icon"><i class="fas fa-envelope"></i></div>
-              <div class="text">
-                <strong>Email</strong>ramakmaharjan@gmail.com
-              </div>
+              <div class="text"><strong>Email</strong>ramakmaharjan@gmail.com</div>
             </div>
             <div class="cdetail">
               <div class="icon"><i class="fas fa-phone"></i></div>
@@ -618,41 +387,18 @@
             </div>
             <div class="cdetail">
               <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
-              <div class="text">
-                <strong>Location</strong>Chobhar, Kathmandu, Nepal — 4104
-              </div>
+              <div class="text"><strong>Location</strong>Chobhar, Kathmandu, Nepal — 4104</div>
             </div>
           </div>
           <form class="cform" action="" method="POST">
-            <div class="frow">
-              <input
-                type="text"
-                name="name"
-                placeholder="Your name"
-                class="fi"
-                required
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="Your email"
-                class="fi"
-                required
-              />
+            <div class="form-group frow">
+              <div class="fi-wrap"><label>Your Name</label><input type="text" name="name" placeholder="Ramak Maharjan" class="fi" required /></div>
+              <div class="fi-wrap"><label>Your Email</label><input type="email" name="email" placeholder="you@example.com" class="fi" required /></div>
             </div>
-            <input
-              type="text"
-              name="project"
-              placeholder="Project type"
-              class="fi"
-            />
-            <textarea
-              name="message"
-              placeholder="Your message..."
-              class="fi fta"
-            ></textarea>
-            <button type="submit" class="sbtn">
-              Send Message <i class="fas fa-paper-plane"></i>
+            <div class="fi-wrap"><label>Project Type</label><input type="text" name="project" placeholder="Web development, IT support..." class="fi" /></div>
+            <div class="fi-wrap"><label>Message</label><textarea name="message" placeholder="Tell me about your project..." class="fi fta"></textarea></div>
+            <button type="submit" class="btn-primary sbtn">
+              <span>Send Message</span><i class="fas fa-paper-plane"></i><div class="btn-glow"></div>
             </button>
           </form>
         </div>
@@ -662,29 +408,16 @@
         <div class="ftop">
           <div>
             <div class="fbrand">Ramak<span>.</span></div>
-            <p class="fdesc">
-              Motivated Technical Support Specialist with 4+ years of
-              experience. Passionate about IT, web development, and building
-              meaningful digital solutions from Nepal.
-            </p>
+            <p class="fdesc">Motivated Technical Support Specialist with 4+ years of experience. Passionate about IT, web development, and building meaningful digital solutions from Nepal.</p>
           </div>
           <div class="flinks">
-            <a href="#home">Home</a><a href="#about">About</a
-            ><a href="#qualification">Education</a>
-            <a href="#skill">Experience</a><a href="#portfolio">Works</a
-            ><a href="#blog">Blog</a><a href="#contact">Contact</a>
+            <a href="#home">Home</a><a href="#about">About</a><a href="#qualification">Education</a>
+            <a href="#skill">Experience</a><a href="#portfolio">Works</a><a href="#blog">Blog</a><a href="#contact">Contact</a>
           </div>
         </div>
         <div class="fbottom">
           <span>© 2026 Ramak Maharjan. All rights reserved.</span>
-          <span
-            >Designed &amp; Built by
-            <a
-              href="https://www.linkedin.com/in/romak-maharjan-39b79515b/"
-              style="color: var(--or)"
-              >Ramak Maharjan</a
-            ></span
-          >
+          <span>Designed &amp; Built by <a href="https://www.linkedin.com/in/romak-maharjan-39b79515b/" style="color:var(--or)">Ramak Maharjan</a></span>
         </div>
       </footer>
     </main>
